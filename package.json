@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "node_modules/.bin/webpack -p --config ./webpack.config.prod.js --progress",
-    "start": "node_modules/.bin/webpack -p --config ./webpack.config.prod.js --progress",
-    "prod": "node_modules/.bin/webpack --config webpack.config.prod.js"
+    "start": "node_modules/.bin/webpack-dev-server --port 3000 --config ./webpack.config.dev.js",
+    "prod": "node_modules/.bin/webpack -p --progress --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",

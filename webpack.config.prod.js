@@ -2,12 +2,12 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index',
   context: __dirname,
+  entry: './src/index',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js',
-    publicPath: '/'
+    // publicPath: '/'
   },
   module: {
     rules: [
